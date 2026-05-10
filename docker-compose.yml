@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   db:
     image: mysql:8.0
@@ -9,7 +7,7 @@ services:
       MYSQL_DATABASE: matching_db
       MYSQL_ROOT_PASSWORD: rootpassword
     ports:
-      - "3306:3306"
+      - "3307:3306" # <-- CHỈ SỬA SỐ 3307 Ở ĐÂY
     volumes:
       - mysql_data:/var/lib/mysql
 
